@@ -1,0 +1,97 @@
+a:link, a:visited {
+  color: #5A6378;
+}
+
+a:hover,
+a:focus {
+  color: #60B5CC;
+  text-decoration: underline;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  overflow: auto;
+}
+
+.header img {
+  height: 30px;
+  float: left;
+  margin-top: 25px;
+}
+
+.header h1 {
+  float: left;
+  margin-left: 20px;
+}
+
+.site-container {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 80%;
+  max-width: 43em; /* 688px - this makes it around 100 characters */
+  margin: 20px auto;
+}
+
+.body {
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.navigation {
+  padding: 5px 0 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.navigation ul {
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.0625em; /* 17px */
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+
+.navigation li:last-of-type {
+  border-right: none;
+}
+
+.navigation a:link,
+.navigation a:visited {
+  text-decoration: none;
+}
+
+
+.mainBody {
+  margin: 5px 0;
+  padding: 5px 0 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.mainBody p {
+  font-size: 1em;
+  line-height: 1.625; /* 24px */
+}
+
+.mainBody img {
+  max-width: 100%;
+}
+
+pre {
+  font-size: 1.1725em; /* 17px */
+}
+
+p > code {
+  background: #eee;
+  font-size: 1.1625em; /* 17px */
+}
+
+.searchInput {
+  padding: 3px;
+  display: block;
+  margin: 10px 0;
+  width: 60%;
+  font-size: 16px;
+
+}
