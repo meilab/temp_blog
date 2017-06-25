@@ -24,7 +24,7 @@ render model =
 header : Model -> Html Msg
 header model =
     Html.header [ class "header" ]
-        [ img [ src "/img/elm.png" ] []
+        [ img [ src "/temp_blog/img/elm.png" ] []
         , h1 [] [ text "The Elm Playground" ]
         ]
 

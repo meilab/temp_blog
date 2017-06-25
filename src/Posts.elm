@@ -9,7 +9,7 @@ import RemoteData exposing (RemoteData)
 
 helloWorld : Content
 helloWorld =
-    { slug = "/hello-world"
+    { slug = "/temp_blog/hello-world"
     , title = "Hello World"
     , name = "hello-world"
     , publishedDate = fromCalendarDate 2016 Oct 30
@@ -22,7 +22,7 @@ helloWorld =
 
 buildingTheElmPlayground : Content
 buildingTheElmPlayground =
-    { slug = "/building-the-elm-playground"
+    { slug = "/temp_blog/building-the-elm-playground"
     , title = "Building the Elm Playground"
     , name = "building-elm-playground"
     , publishedDate = fromCalendarDate 2016 Oct 31
@@ -35,7 +35,7 @@ buildingTheElmPlayground =
 
 elmJsonDecodingOne : Content
 elmJsonDecodingOne =
-    { slug = "/decoding-json-in-elm-1"
+    { slug = "/temp_blog/decoding-json-in-elm-1"
     , title = "Decoding JSON in Elm"
     , name = "decoding-json-in-elm-1"
     , publishedDate = fromCalendarDate 2016 Nov 8
@@ -48,7 +48,7 @@ elmJsonDecodingOne =
 
 shoppingOne : Content
 shoppingOne =
-    { slug = "/elm-screencast-shopping-1"
+    { slug = "/temp_blog/elm-screencast-shopping-1"
     , title = "Building a Shopping List in Elm: Episode 1"
     , name = "elm-screencast-shopping-1"
     , publishedDate = fromCalendarDate 2016 Nov 21

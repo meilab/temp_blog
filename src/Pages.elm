@@ -9,7 +9,7 @@ import RemoteData exposing (RemoteData)
 
 index : Content
 index =
-    { slug = "/"
+    { slug = "/temp_blog/"
     , contentType = Page
     , name = "index"
     , title = "Elm Playground"
@@ -22,7 +22,7 @@ index =
 
 about : Content
 about =
-    { slug = "/about"
+    { slug = "/temp_blog/about"
     , contentType = Page
     , name = "about"
     , title = "About the Elm Playground"
@@ -35,7 +35,7 @@ about =
 
 archives : Content
 archives =
-    { slug = "/archives"
+    { slug = "/temp_blog/archives"
     , contentType = Page
     , name = "archives"
     , title = "Archives"
@@ -48,7 +48,7 @@ archives =
 
 watchMeElm : Content
 watchMeElm =
-    { slug = "/watch-me-elm"
+    { slug = "/temp_blog/watch-me-elm"
     , contentType = Page
     , name = "watch-me-elm"
     , title = "Watch Me Elm video series"
@@ -74,7 +74,7 @@ notFoundContent =
 
 notFound404 : Content
 notFound404 =
-    { slug = "/404"
+    { slug = "/temp_blog/404"
     , contentType = Page
     , name = "404"
     , title = "You're lost!"
