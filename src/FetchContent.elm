@@ -19,7 +19,7 @@ urlForContent content =
         loc =
             locationForContentType content.contentType
     in
-        "/content/" ++ loc ++ "/" ++ content.name ++ ".md"
+        "/temp_blog/content/" ++ loc ++ "/" ++ content.name ++ ".md"
 
 
 locationForContentType : ContentType -> String

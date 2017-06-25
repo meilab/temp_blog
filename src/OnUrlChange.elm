@@ -31,7 +31,9 @@ update : String -> Model -> ( Model, Cmd Msg )
 update newUrl model =
     case getContentForUrl newUrl of
         Nothing ->
-            model ! [ Navigation.modifyUrl "/404" ]
+            Debug.log (toString (newUrl))
+                model
+                ! [ Navigation.modifyUrl "/temp_blog/404" ]
 
         Just item ->
             let
