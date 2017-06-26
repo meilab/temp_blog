@@ -1,3 +1,4 @@
-The Elm Playground is a blog dedicated to teaching people [Elm][elm], a programming language aimed at building robust front end applications. It's quickly become a very prominent language in the frontend and one that people really enjoy working with.
+Meilab is a tech site focus on [Elm][elm], [Elixir][elixir] and IoT technology, I like functional programming, I really enjoy the coding experience with Elm and Elixir.
 
 [elm]: http://elm-lang.org
+[elixir]: https://elixir-lang.org

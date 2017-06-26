@@ -3,9 +3,10 @@ module ContentUtils exposing (..)
 import Types exposing (Content, ContentType(..))
 import List
 import Pages
-import Date.Extra
 import Posts
+import Date.Extra
 import String
+import Routing exposing (Route)
 
 
 allContent : List Content
@@ -13,24 +14,35 @@ allContent =
     Pages.pages ++ Posts.posts
 
 
+findByRoute : List Content -> Route -> Maybe Content
+findByRoute contentList route =
+    contentList
+        |> List.filter (\item -> item.route == route)
+        |> List.head
+
+
 findBySlug : List Content -> String -> Maybe Content
 findBySlug contentList slug =
     contentList
-        |> List.filter (\piece -> piece.slug == slug)
+        |> List.filter (\item -> item.slug == slug)
         |> List.head
 
 
 filterByContentType : List Content -> ContentType -> List Content
 filterByContentType contentList contentType =
-    List.filter (\c -> c.contentType == contentType) contentList
+    contentList
+        |> List.filter (\item -> item.contentType == contentType)
 
 
 filterByTitle : List Content -> Maybe String -> List Content
 filterByTitle contentList title =
     case title of
         Just title ->
-            List.filter (\c -> String.contains (String.toLower title) (String.toLower c.title))
-                contentList
+            contentList
+                |> List.filter
+                    (\item ->
+                        String.contains (String.toLower title) (String.toLower item.title)
+                    )
 
         Nothing ->
             sortByDate contentList
